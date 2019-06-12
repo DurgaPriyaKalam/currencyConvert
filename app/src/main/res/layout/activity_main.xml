@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="354dp"
+        android:layout_height="202dp"
+        android:layout_marginBottom="32dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/currency" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the amount you want to convert"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="226dp" />
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="functionConvert"
+        android:text="Convert"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="365dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Amount in pounds"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="280dp" />
+</android.support.constraint.ConstraintLayout>
